@@ -1,0 +1,108 @@
+@import url('variable.css');
+
+div.new_filter_container {
+  background-color: var(--background-grey);
+  border-top: 2.5px solid var(--black);
+}
+
+ul.new_filter_ct_ct_001_list {
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid var(--line-grey);
+}
+
+ul.new_filter_ct_ct_001_list li {
+  display: inline-flex;
+  padding: 11px 33px;
+  cursor: pointer;
+  font-weight: 500;
+  border-bottom: 1.5px solid var(--background-grey);
+  color: var(--tab-grey);
+}
+
+ul.new_filter_ct_ct_001_list li.active {
+  border-bottom: 1.5px solid var(--blue);
+  font-weight: 600;
+  color: var(--black);
+}
+
+ul.new_filter_ct_ct_002_list {
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid var(--line-grey);
+}
+
+ul.new_filter_ct_ct_002_list li {
+  display: inline-flex;
+  padding: 9px 27px;
+  cursor: pointer;
+  font-weight: 500;
+  border-bottom: 1.5px solid var(--background-grey);
+  color: var(--tab-grey);
+  font-size: 0.9em;
+}
+
+ul.new_filter_ct_ct_002_list li.active {
+  border-bottom: 1.5px solid var(--blue);
+  font-weight: 600;
+  color: var(--black);
+}
+
+ul.new_filter_ct_ct_003_list {
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid var(--line-grey);
+}
+
+ul.new_filter_ct_ct_003_list li {
+  display: inline-flex;
+  padding: 9px 27px;
+  cursor: pointer;
+  font-weight: 500;
+  border-bottom: 1.5px solid var(--background-grey);
+  color: var(--tab-grey);
+  font-size: 0.9em;
+}
+
+ul.new_filter_ct_ct_003_list li.active {
+  border-bottom: 1.5px solid var(--blue);
+  font-weight: 600;
+  color: var(--black);
+}
+
+div.new_filter_details {
+  background-color: var(--white);
+}
+
+ul.new_filter_details_list {
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid var(--white);
+}
+
+ul.new_filter_details_list li {
+  display: inline-flex;
+  padding: 5px 15px;
+  cursor: pointer;
+  font-weight: 500;
+  border-bottom: 1.5px solid var(--white);
+  color: var(--tab-grey);
+  font-size: 0.85em;
+}
+
+ul.new_filter_details_list li.active {
+  font-weight: 600;
+  color: var(--black);
+}
+
+@media (max-width: 700px) {
+  ul.new_filter_ct_ct_001_list li {
+    padding: 8px 16px;
+  }
+  ul.new_filter_ct_ct_002_list li {
+    padding: 7px 14px;
+  }
+  ul.new_filter_ct_ct_003_list li {
+    padding: 6px 12px;
+  }
+}

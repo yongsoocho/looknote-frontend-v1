@@ -1,0 +1,152 @@
+@import url("variable.css");
+
+div.filter_tabs_container
+{
+	color: var(--tab-grey);
+}
+
+
+div.filter_tabs_category_1
+{
+	display: flex;
+	flex-wrap: wrap;
+}
+div.filter_tabs_categories
+{
+	padding: 15px 30px;
+	box-sizing: border-box;
+	cursor: pointer;
+	border-bottom: 2.5px solid var(--background-grey);
+}
+div.filter_tabs_categories_active
+{
+	color: var(--black);
+	border-bottom: 2.5px solid var(--blue);
+}
+div.filter_tabs_categories input
+{
+	display: none;
+}
+div.filter_tabs_categories label
+{
+	padding: 10px 20px;
+	font-size: 1.1em;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+div.filter_content_categories
+{
+	display: none;
+}
+div.filter_content_categories_active
+{
+	display: block;
+	font-weight: 600;
+}
+div.filter_content_categories > div
+{
+	display: flex;
+	flex-wrap: wrap;
+}
+div.filter_tabs_contents
+{
+	cursor: pointer;
+	padding: 15px 30px;
+}
+div.filter_tabs_contents_active
+{
+	color: var(--black);
+	font-weight: 600;
+}
+div.filter_tabs_contents input
+{
+	display: none;
+}
+div.filter_tabs_contents label
+{
+	padding: 10px 20px;
+	font-size: 1.1em;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+div.filter_tabs_category_2_3 {
+	border-top: 1px solid var(--line-grey);
+}
+div.filter_tabs_category_3 {
+	border-top: 1px solid var(--line-grey);
+}
+
+
+div.filter_content_children_categories
+{
+	display: none;
+}
+div.filter_content_children_categories_active
+{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+div.filter_tabs_children_contents
+{
+	cursor: pointer;
+	padding: 15px 30px;
+}
+div.filter_tabs_children_contents input
+{
+	display: none;
+}
+div.filter_tabs_children_contents label
+{
+	padding: 10px 20px;
+	font-size: 1em;
+	font-weight: 500;
+	cursor: pointer;
+}
+div.filter_tabs_children_contents_active
+{
+	color: var(--black);
+	font-weight: 600;
+}
+
+
+@media(max-width: 600px) {
+	div.filter_tabs_categories
+	{
+		padding: 10px 15px;
+	}
+	div.filter_tabs_categories label
+	{
+		padding: 0px 0px;
+		font-size: 1em;
+	}
+	div.filter_tabs_contents
+	{
+		padding: 10px 12px;
+	}
+	div.filter_tabs_contents label
+	{
+		padding: 0px 0px;
+		font-size: 0.9em;
+	}
+	div.filter_tabs_children_contents
+	{
+		padding: 10px 10px;
+	}
+	div.filter_tabs_children_contents label
+	{
+		padding: 0px 0px;
+		font-size: 0.85em;
+	}
+	div.filter_content_children_categories
+	{
+		padding: 5px 3px;
+	}
+	div.filter_content_children_categories
+	{
+		padding: 5px 5px;
+	}
+}

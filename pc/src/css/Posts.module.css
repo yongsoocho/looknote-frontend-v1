@@ -1,0 +1,124 @@
+@import url('variable.css');
+
+div.container {
+  background-color: var(--background-grey);
+}
+
+div.post_container {
+  display: grid;
+  padding-top: 25px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, auto);
+  grid-row-gap: 10px;
+  justify-content: space-around;
+  justify-items: center;
+  flex-wrap: wrap;
+}
+
+div.index_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+div.index_container i {
+  cursor: pointer;
+}
+div.content {
+  width: 300px;
+  overflow: hidden;
+  margin: 0px 15px;
+}
+div.wrapper {
+  width: 300px;
+  position: relative;
+  transition: 0.2s;
+}
+.indexer {
+  margin: 0px 15px;
+  cursor: pointer;
+}
+.active {
+  font-weight: 700;
+}
+
+div.index_container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.index_container > div > i {
+  cursor: pointer;
+  margin: 0px 30px;
+}
+div.index_container > div > div {
+  padding: 0 30px;
+}
+span.index {
+  font-size: 1.3em;
+  cursor: pointer;
+  margin: 0px 5px;
+  font-weight: 400;
+  color: var(--footer-font-grey);
+}
+span.index_active {
+  font-weight: 600;
+  color: black;
+}
+
+div.filter_filters {
+  border-top: 2.5px solid var(--black);
+  padding: 10px 25px;
+  box-sizing: border-box;
+  position: relative;
+}
+div.filter_filters > span:first-child {
+  color: grey;
+}
+span.filter_filter {
+  margin: 0px 5px;
+  font-weight: 600;
+  color: var(--blue);
+  letter-spacing: 0.1em;
+  font-size: 0.9em;
+}
+div.search {
+  position: absolute;
+  width: 80px;
+  height: 30px;
+  background-color: var(--blue);
+  color: var(--white);
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 50px;
+  top: 10px;
+  cursor: pointer;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+div.search:hover {
+  color: var(--blue);
+  background-color: var(--white);
+}
+
+@media (max-width: 1200px) {
+  div.post_container {
+    grid-template-columns: repeat(auto-fill, 220px);
+  }
+}
+@media (max-width: 700px) {
+  div.post_container {
+    grid-template-columns: repeat(auto-fill, 220px);
+  }
+  div.search {
+    top: 50px;
+    right: calc(50% - 40px);
+  }
+}
+@media (max-width: 500px) {
+  div.post_container {
+    grid-template-columns: repeat(auto-fill, 170px);
+  }
+}

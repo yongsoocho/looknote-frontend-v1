@@ -1,0 +1,143 @@
+@import url('variable.css');
+
+div.container {
+  background-color: var(--white);
+}
+div.items {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+div.items > div {
+  display: inline-flex;
+  padding: 5px 15px;
+  position: relative;
+}
+div.items input {
+  display: none;
+}
+div.items label {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  padding: 5px 7px;
+  cursor: pointer;
+  font-size: 0.9em;
+  color: rgba(0, 0, 0, 0.3);
+}
+div.items input:checked + label {
+  border: 1px solid rgba(0, 0, 0, 1);
+  color: rgba(0, 0, 0, 1);
+}
+
+div.colors {
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 5px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+div.colors > span {
+  display: none;
+}
+div.colors:nth-child(1) {
+  background-color: #ffffff;
+}
+div.colors:nth-child(2) {
+  background-color: #fff8e4;
+}
+div.colors:nth-child(3) {
+  background-color: #e8d7be;
+}
+div.colors:nth-child(4) {
+  background-color: #d2d2d2;
+}
+div.colors:nth-child(5) {
+  background-color: #777777;
+}
+div.colors:nth-child(6) {
+  background-color: #000000;
+}
+div.colors:nth-child(7) {
+  background-color: #ffe8f6;
+}
+div.colors:nth-child(8) {
+  background-color: #fffcb7;
+}
+div.colors:nth-child(9) {
+  background-color: #ffd28e;
+}
+div.colors:nth-child(10) {
+  background-color: #daffbc;
+}
+div.colors:nth-child(11) {
+  background-color: #d0f1ff;
+}
+div.colors:nth-child(12) {
+  background-color: #e8d1ff;
+}
+div.colors:nth-child(13) {
+  background-color: #ffa5d5;
+}
+div.colors:nth-child(14) {
+  background-color: #ffec3d;
+}
+div.colors:nth-child(15) {
+  background-color: #ffa722;
+}
+div.colors:nth-child(16) {
+  background-color: #5bcf00;
+}
+div.colors:nth-child(17) {
+  background-color: #0066ff;
+}
+div.colors:nth-child(18) {
+  background-color: #7e00e0;
+}
+div.colors:nth-child(19) {
+  background-color: #ef0000;
+}
+div.colors:nth-child(20) {
+  background-color: #cb6c14;
+}
+div.colors:nth-child(21) {
+  background-color: #955f40;
+}
+div.colors:nth-child(22) {
+  background-color: #8c8700;
+}
+div.colors:nth-child(23) {
+  background-color: #00057e;
+}
+div.colors:nth-child(24) {
+  background-color: #940000;
+}
+div.colors:nth-child(25) {
+  background-color: #eeba00;
+}
+div.colors:nth-child(26) {
+  background-color: #c8c8c8;
+}
+div.colors:nth-child(27) {
+  background-color: #00ffff;
+}
+div.colors:nth-child(28) {
+  background-color: #b8fde1;
+}
+div.colors:nth-child(29) {
+  background-color: #92c4ff;
+}
+div.colors:nth-child(30) {
+  background-color: #ff9c7d;
+}
+
+@media (max-width: 600px) {
+  div.container {
+    padding: 5px 10px;
+  }
+  div.items label {
+    padding: 3px 5px;
+    font-size: 0.8em;
+  }
+}

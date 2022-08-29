@@ -1,0 +1,62 @@
+@import url('variable.css');
+
+div.footer_container {
+  width: 1200px;
+  height: 300px;
+  margin: auto;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1200px) {
+  div.footer_container {
+    width: 100%;
+  }
+}
+
+div.footer_container div {
+  display: flex;
+  width: 150px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+img.footer_insta {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+img.footer_insta:hover {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+div.footer_container p {
+  margin: 5px 0;
+  font-weight: 500;
+  font-size: 0.9em;
+}
+div.footer_container p:nth-child(6) {
+  color: var(--footer-font-grey);
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 0.8em;
+}
+div.footer_container p:nth-child(7) {
+  color: var(--footer-font-grey);
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 0.8em;
+}
+p.footer_pdf:hover {
+  border-bottom: 1px solid var(--footer-font-grey);
+}
+
+@media (max-width: 600px) {
+  div.footer_container p {
+    font-size: 0.75em;
+  }
+  p.footer_pdf {
+    font-size: 0.7em;
+  }
+}

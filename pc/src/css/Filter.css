@@ -1,0 +1,56 @@
+@import url('variable.css');
+
+div.filter_container {
+  width: 100%;
+}
+div.filter_category {
+  width: 100%;
+  background: var(--background-grey);
+  border-top: 2.5px solid var(--black);
+}
+div.filter_tabs {
+  width: 100%;
+}
+
+ul.filter_tab_nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1.5px solid var(--line-grey);
+  border-bottom: 1.5px solid var(--line-grey);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+ul.filter_tab_nav > li.filter_tab {
+  display: inline-flex;
+  font-size: 1em;
+  font-weight: 400;
+  padding: 5px 25px;
+  color: var(--tab-grey);
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+ul.filter_tab_nav > li.filter_tab_active {
+  color: black;
+}
+
+div.filter_con {
+  display: none;
+  box-sizing: border-box;
+}
+div.filter_con_active {
+  width: 100%;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  ul.filter_tab_nav > li.filter_tab {
+    padding: 5px 15px;
+  }
+  span.filter_filter {
+    font-size: 0.85em;
+  }
+}
